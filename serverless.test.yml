@@ -1,0 +1,36 @@
+- name: say "Hello, World!"
+  endpoint:
+    function: hello
+    response:
+      body: "Hello, World!"
+      status: 200
+
+- name: say "Hello, Sam!"
+  endpoint:
+    function: hello
+    request:
+      body:
+        name: Sam
+      response:
+        body: "Hello, Sam!"
+        status: 200
+
+- name: /sigma/ endpoint should calculate sigma of 5. i.e. 10
+  endpoint:
+    function: sigma
+  request:
+    body:
+      number: 5
+  response:
+    body: 15
+    status: 200
+
+- name: /factorial/ endpoint should calculate factorial of 5. i.e 120
+  endpoint:
+    function: factorial
+  request:
+    body:
+      number: 5
+  response:
+    body: 120
+    status: 200

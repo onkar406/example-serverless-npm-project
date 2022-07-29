@@ -1,0 +1,48 @@
+service: serverless-calc-api
+
+frameworkVersion: ">=2"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: ap-south-1
+  lambdaHashingVersion: 20201221
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: POST
+
+  bye:
+    handler: handler.bye
+    events:
+      - http:
+          path: bye
+          method: POST
+
+  sigma:
+    handler: handler.sigma
+    events:
+      - http:
+          path: sigma
+          method: POST
+
+  factorial:
+    handler: handler.factorial
+    events:
+      - http:
+          path: factorial
+          method: POST
+
+# serverless-offine
+plugins:
+  - serverless-offline
+
+# custom:
+#   serverless-offline:
+#     resourceRoutes: true

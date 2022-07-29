@@ -1,0 +1,6 @@
+{
+    "body": "{\"number\":3}",
+    "httpMethod": "POST",
+    "path": "/sigma/",
+    "resource": "/"
+}

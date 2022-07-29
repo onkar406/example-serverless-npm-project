@@ -1,0 +1,6 @@
+{
+    "body" : "{\"name\": \"Unknown\"}",
+    "httpMethod": "POST",
+    "path": "/hello",
+    "resource": "/"
+}
