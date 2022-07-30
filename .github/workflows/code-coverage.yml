@@ -13,8 +13,9 @@ on:
 
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  code_coverage:
+  # if_merged_or_pushed:
+  #   if: ${{ (github.event.pull_request.merged == true) || (github.event.push == true) }}
   # code-coverage:
     name: Code Coverage
     runs-on: ubuntu-latest
