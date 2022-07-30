@@ -32,7 +32,7 @@ jobs:
           cache: 'npm'
 
       - name: Install CI
-        run: npm ci
+      - run: npm ci
 
       - name: CodeCov
         uses: codecov/codecov-action@v3
