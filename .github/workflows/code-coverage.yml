@@ -1,0 +1,41 @@
+# This Github Actions runs when a Code is pushed to any branch as well as when a pull request is merged.
+name: Code Coverage Report
+
+on:
+  push:
+    branches:
+      - all
+  pull_request:
+    types:
+      - closed
+  workflow_dispatch:
+
+
+
+# // Value is not accepted. Valid values: "branch_protection_rule", "check_run", "check_suite", "create", "delete", "deployment", "deployment_status", "discussion", "discussion_comment", "fork", "gollum", "issue_comment", "issues", "label", "member", "milestone", "page_build", "project", "project_card", "project_column", "public", "pull_request", "pull_request_review", "pull_request_review_comment", "pull_request_target", "push", "registry_package", "release", "status", "watch", "workflow_call", "workflow_dispatch", "workflow_run", "repository_dispatch".
+# // Value is not accepted. Valid values: "macos-10.15", "macos-11", "macos-12", "macos-latest", "self-hosted", "ubuntu-18.04", "ubuntu-20.04", "ubuntu-22.04", "ubuntu-latest", "windows-2016", "windows-2019", "windows-2022", "windows-latest".
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+  # code-coverage:
+    name: Code Coverage
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+      - uses: actions/checkout
+
+      - name: Setup Node
+        uses: actions/setup-node
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Install CI
+        run: npm ci
+
+      - name: CodeCov
+        uses: codecov/codecov-action@v3
+        with:
+          # token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
