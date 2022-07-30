@@ -4,7 +4,8 @@ name: Code Coverage Report
 on:
   push:
     branches:
-      - all
+      - main
+      - testing/*
   pull_request:
     types:
       - closed
