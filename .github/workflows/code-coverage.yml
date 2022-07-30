@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Checkout
-      - uses: actions/checkout
+        uses: actions/checkout
 
       - name: Setup Node
         uses: actions/setup-node
@@ -32,7 +32,7 @@ jobs:
           cache: 'npm'
 
       - name: Install CI
-      - run: npm ci
+        run: npm ci
 
       - name: CodeCov
         uses: codecov/codecov-action@v3
