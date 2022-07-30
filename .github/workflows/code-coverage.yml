@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - testing/coverage_tests
   pull_request:
     types:
       - closed
@@ -30,7 +31,11 @@ jobs:
           cache: 'npm'
 
       - name: Install CI
-        run: npm ci
+        run: |
+          npm ci
+          npm run test
+          npm run coverage
+          npm run report-coverage
 
       - name: Codecov
         uses: codecov/codecov-action@v3.1.0
