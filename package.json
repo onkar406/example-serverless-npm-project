@@ -10,7 +10,7 @@
     "local": "serverless offline",
     "deploy": "serverless deploy",
     "test": "mocha ./test/**",
-    "coverage": "nyc npm run test; nyc report --reporter=lcov --reporter=text --reporter=html --show-process-tree"
+    "coverage": "nyc npm run test; nyc report --reporter=text-lcov --show-process-tree >coverage.lcov && codecov --disable=gcov"
   },
   "keywords": [
     "serverless",

@@ -1,0 +1,43 @@
+# This Github Actions runs when a Code is pushed to any branch as well as when a pull request is merged.
+name: Code Coverage Report
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - testing/coverage_tests
+  pull_request:
+    types:
+      - closed
+
+
+jobs:
+  code_coverage:
+  # if_merged_or_pushed:
+  #   if: ${{ (github.event.pull_request.merged == true) || (github.event.push == true) }}
+  # code-coverage:
+    name: Code Coverage
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
+      - name: Install CI
+        run: |
+          npm ci
+          npm run test
+          npm run coverage
+
+      - name: Codecov
+        uses: codecov/codecov-action@v3.1.0
+        with:
+          # token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
