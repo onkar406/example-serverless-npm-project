@@ -7,3 +7,5 @@
 
 <!-- Code Coverage Start -->
 <!-- Code Coverage End -->
+
+An example project to get started with Serverless, Node.js and npm

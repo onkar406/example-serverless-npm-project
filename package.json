@@ -9,9 +9,8 @@
   "scripts": {
     "local": "serverless offline",
     "deploy": "serverless deploy",
-    "test": "mocha ./test/**| tee unit-tests.txt",
-    "coverage": "nyc npm run test; nyc report --reporter=lcov --reporter=text --reporter=html --show-process-tree; codecov",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "test": "mocha ./test/**",
+    "coverage": "nyc report --reporter=text --show-process-tree && codecov --disable=gcov"
   },
   "keywords": [
     "serverless",
