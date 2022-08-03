@@ -35,7 +35,6 @@ jobs:
           npm ci
           npm run test
           npm run coverage
-          npm run report-coverage
 
       - name: Codecov
         uses: codecov/codecov-action@v3.1.0
