@@ -7,6 +7,7 @@ on:
     branches:
       - main
       - testing/coverage_tests
+      - testing/README-A
   pull_request:
     types:
       - closed
@@ -33,8 +34,20 @@ jobs:
       - name: Install CI
         run: |
           npm ci
-          npm run test
-          npm run coverage
+          npm run test | tee unit-tests.txt
+          npm run coverage | tee coverage.txt
+
+      - name: README Creation
+        shell: bash
+        run: |
+        ./script.sh
+        mv README.md.bak README.md
+
+      - name: Commit and Push
+        run: |
+          git config --local user.name "readme-updater"
+          git add README.md
+          git commit -m "Updated README.md"
 
       - name: Codecov
         uses: codecov/codecov-action@v3.1.0
