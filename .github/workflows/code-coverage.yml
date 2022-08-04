@@ -48,6 +48,7 @@ jobs:
           git config --local user.name "readme-updater"
           git add README.md
           git commit -m "Updated README.md"
+          git push
 
       - name: Codecov
         uses: codecov/codecov-action@v3.1.0
