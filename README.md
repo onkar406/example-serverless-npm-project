@@ -40,7 +40,7 @@
     ✔ factorial(0) should return 1
 
 
-  14 passing (18ms)
+  14 passing (7ms)
 
 <!-- Unit Tests End -->
 ```
