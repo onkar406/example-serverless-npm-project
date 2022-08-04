@@ -4,7 +4,11 @@
 
 ---
 
-### Unit Tests for ${{ github.ref_name }} (${{ github.sha }})
+### Unit Test Report
+Branch:
+Commit SHA: #
+
+
 ``` text
 <!-- Unit Tests Start -->
 
@@ -47,15 +51,17 @@
 
 ---
 
-### Coverage Report for ${{ github.ref_name }} (${{ github.sha }})
+### Coverage Report
+Branch:
+Commit SHA: #
 
 ``` text
 <!-- Code Coverage Start -->
 ----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------|---------|----------|---------|---------|-------------------
-All files |   93.75 |       90 |     100 |   93.75 |                   
- calc.js  |   93.75 |       90 |     100 |   93.75 | 23                
+All files |   93.75 |       90 |     100 |   93.75 |
+ calc.js  |   93.75 |       90 |     100 |   93.75 | 23
 ----------|---------|----------|---------|---------|-------------------
 <!-- Code Coverage End -->
 ```
