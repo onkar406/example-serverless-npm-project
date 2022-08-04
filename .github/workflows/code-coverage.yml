@@ -40,8 +40,8 @@ jobs:
       - name: README Creation
         shell: bash
         run: |
-        ./script.sh
-        mv README.md.bak README.md
+          ./script.sh
+          mv README.md.bak README.md
 
       - name: Commit and Push
         run: |
