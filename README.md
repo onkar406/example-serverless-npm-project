@@ -4,20 +4,59 @@
 
 ---
 
-### Unit Tests for BRANCH (SHA)
+### Unit Tests for ${{ github.ref_name }} (${{ github.sha }})
 ``` text
 <!-- Unit Tests Start -->
+
+> example-serverless-npm-project@1.0.0 test
+> mocha ./test/**
+
+
+
+  times()
+    ✔ should equal 10
+    ✔ should equal 6
+    ✔ should equal 25
+
+  spell()
+    ✔ should return "one"
+    ✔ should return "two"
+    ✔ should return "three"
+    ✔ should return "four"
+    ✔ should return "unknown"
+
+  pow()
+    ✔ should return 8
+
+  combination of multiple functions
+    ✔ sigma(3) === factorial(3)
+
+  sigma()
+    ✔ sigma(10) should return 55
+    ✔ sigma(0) should return 0
+
+  factorial()
+    ✔ factorial(10) should return 3628800
+    ✔ factorial(0) should return 1
+
+
+  14 passing (18ms)
 
 <!-- Unit Tests End -->
 ```
 
 ---
 
-### Coverage Report for BRANCH (SHA)
+### Coverage Report for ${{ github.ref_name }} (${{ github.sha }})
 
 ``` text
 <!-- Code Coverage Start -->
-
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |   93.75 |       90 |     100 |   93.75 |                   
+ calc.js  |   93.75 |       90 |     100 |   93.75 | 23                
+----------|---------|----------|---------|---------|-------------------
 <!-- Code Coverage End -->
 ```
 
