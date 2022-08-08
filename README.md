@@ -7,7 +7,6 @@
 ### Unit Test Report
 Branch: testing/README-A, Commit SHA: #ac7bc18
 
-
 ``` text
 <!-- Unit Tests Start -->
 
@@ -43,7 +42,7 @@ Branch: testing/README-A, Commit SHA: #ac7bc18
     ✔ factorial(0) should return 1
 
 
-  14 passing (10ms)
+  14 passing (8ms)
 
 <!-- Unit Tests End -->
 ```
@@ -51,16 +50,15 @@ Branch: testing/README-A, Commit SHA: #ac7bc18
 ---
 
 ### Coverage Report
-Branch: testing/README-A testing/README-A testing/README-A
-Commit SHA: #176ac6b6ad224aed48
+Branch: testing/README-A, Commit SHA: #ac7bc18
 
 ``` text
 <!-- Code Coverage Start -->
 ----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------|---------|----------|---------|---------|-------------------
-All files |   93.75 |       90 |     100 |   93.75 |                   
- calc.js  |   93.75 |       90 |     100 |   93.75 | 23                
+All files |   93.75 |       90 |     100 |   93.75 |
+ calc.js  |   93.75 |       90 |     100 |   93.75 | 23
 ----------|---------|----------|---------|---------|-------------------
 <!-- Code Coverage End -->
 ```
