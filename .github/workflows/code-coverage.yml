@@ -40,7 +40,16 @@ jobs:
       - name: README Creation
         shell: bash
         run: |
-          bash ./script.sh "${{ github.ref_name }}" "${{ github.sha }}"
+          set -x
+          github_refname="${{ github.ref_name }}"
+          github_sha="${{ github.sha }}"
+          sed -e '/<!-- Unit Tests Start -->/,/<!-- Unit Tests End -->/{/^<!--.*-->/!d}' \
+              -e '/<!-- Unit Tests Start -->.*$/r unit-tests.txt' \
+              -e '/<!-- Code Coverage Start -->/,/<!-- Code Coverage End -->/{/^<!--.*-->/!d}' \
+              -e '/<!-- Code Coverage Start -->.*$/r ./coverage.txt' \
+               ./README.md >./README.md.bak \
+          && sed -i -e 's/^Branch:*/Branch: '"${github_refname/\//\\/}"'/g' README.md.bak \
+          && sed -i -e 's/Commit SHA: #/Commit SHA: #'"${github_sha:0:6}"'/g' README.md.bak
           mv README.md.bak README.md
 
       - name: Commit and Push
