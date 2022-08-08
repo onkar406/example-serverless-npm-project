@@ -49,7 +49,7 @@ jobs:
               -e '/<!-- Code Coverage Start -->.*$/r ./coverage.txt' \
                ./README.md >./README.md.bak \
           && sed -i -e 's/^Branch:*,/Branch: '"${github_refname/\//\\/}"',/g' README.md.bak \
-          && sed -i -e 's/Commit SHA: #$/Commit SHA: #'"${github_sha:0:7}"'/g' README.md.bak
+          && sed -i -e 's/Commit SHA: #.*$/Commit SHA: #'"${github_sha:0:7}"'/g' README.md.bak
           mv README.md.bak README.md
 
       - name: Commit and Push
