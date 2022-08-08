@@ -5,8 +5,8 @@
 ---
 
 ### Unit Test Report
-Branch: testing/README-A
-Commit SHA: #4aed48
+Branch: testing/README-A testing/README-A
+Commit SHA: #b6ad224aed48
 
 
 ``` text
@@ -44,7 +44,7 @@ Commit SHA: #4aed48
     ✔ factorial(0) should return 1
 
 
-  14 passing (7ms)
+  14 passing (9ms)
 
 <!-- Unit Tests End -->
 ```
@@ -52,8 +52,8 @@ Commit SHA: #4aed48
 ---
 
 ### Coverage Report
-Branch: testing/README-A
-Commit SHA: #4aed48
+Branch: testing/README-A testing/README-A
+Commit SHA: #b6ad224aed48
 
 ``` text
 <!-- Code Coverage Start -->
