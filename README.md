@@ -42,7 +42,7 @@ Branch: testing/README-A, Commit SHA: #ac7bc18
     ✔ factorial(0) should return 1
 
 
-  14 passing (8ms)
+  14 passing (7ms)
 
 <!-- Unit Tests End -->
 ```
