@@ -5,7 +5,7 @@
 ---
 
 ### Unit Test Report
-Branch: testing/README-A testing/README-A, Commit SHA: #176ac6b6ad224aed48
+Branch: testing/README-A, Commit SHA: #ac7bc18
 
 
 ``` text
@@ -57,10 +57,10 @@ Commit SHA: #176ac6b6ad224aed48
 ``` text
 <!-- Code Coverage Start -->
 ----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------|---------|----------|---------|---------|-------------------
-All files |   93.75 |       90 |     100 |   93.75 |                   
- calc.js  |   93.75 |       90 |     100 |   93.75 | 23                
+All files |   93.75 |       90 |     100 |   93.75 |
+ calc.js  |   93.75 |       90 |     100 |   93.75 | 23
 ----------|---------|----------|---------|---------|-------------------
 <!-- Code Coverage End -->
 ```
