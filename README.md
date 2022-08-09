@@ -5,7 +5,7 @@
 ---
 
 ### Unit Test Report
-Branch: testing/README-A, Commit SHA: #4b7dad1
+Branch: testing/README-A, Commit SHA: 4b7dad1
 
 ``` text
 <!-- Unit Tests Start -->
@@ -50,7 +50,7 @@ Branch: testing/README-A, Commit SHA: #4b7dad1
 ---
 
 ### Coverage Report
-Branch: testing/README-A, Commit SHA: #4b7dad1
+Branch: testing/README-A, Commit SHA: 4b7dad1
 
 ``` text
 <!-- Code Coverage Start -->
