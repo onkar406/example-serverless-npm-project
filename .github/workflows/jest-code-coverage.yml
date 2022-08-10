@@ -42,5 +42,5 @@ jobs:
         with:
           junit_files: "junit.xml"
 
-      - name: Conclusion
-        run: echo "Conclusion is ${{ fromJSON( steps.test-results.outputs.json ).conclusion }}"
+      # - name: Conclusion
+      #   run: echo "Conclusion is ${{ fromJSON( steps.test-results.outputs.json ).conclusion }}"
