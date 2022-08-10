@@ -10,7 +10,7 @@
     "local": "serverless offline",
     "deploy": "serverless deploy",
     "test": "mocha **/test/*",
-    "test-jest": "jest --ci --reporters=default --reporters=jest-junit",
+    "test-jest": "jest --ci --reporters=default --reporters=jest-junit --reporters='./github-actions-reporter'",
     "coverage": "nyc npm run test; nyc report --reporter=html --reporter=text-lcov --show-process-tree >coverage.lcov && codecov --disable=gcov"
   },
   "keywords": [
