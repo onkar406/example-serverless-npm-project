@@ -34,7 +34,6 @@ jobs:
       - name: Install CI
         run: |
           npm ci
-          npm run test
           npm run test-jest
 
       - name: Publish Test Results
