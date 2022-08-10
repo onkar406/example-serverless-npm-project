@@ -8,7 +8,7 @@ describe('times()', () => {
     })
 
     test('should equal 6', () => {
-	expect(calc.times(3,2)).toBe(10)
+	expect(calc.times(3,2)).toBe(6)
     })
 
     test('should equal 25', () => {
