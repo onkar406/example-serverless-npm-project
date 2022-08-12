@@ -1,0 +1,88 @@
+{
+  "bail": 0,
+  "changedFilesWithAncestor": false,
+  "ci": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [],
+  "coverageDirectory": "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/docs/jest-codecoverage",
+  "coverageProvider": "babel",
+  "coverageReporters": [
+    "lcov"
+  ],
+  "detectLeaks": false,
+  "detectOpenHandles": false,
+  "errorOnDeprecated": false,
+  "expand": false,
+  "findRelatedTests": false,
+  "forceExit": false,
+  "json": false,
+  "lastCommit": false,
+  "listTests": false,
+  "logHeapUsage": false,
+  "maxConcurrency": 5,
+  "maxWorkers": 15,
+  "noStackTrace": false,
+  "nonFlagArgs": [],
+  "notify": false,
+  "notifyMode": "failure-change",
+  "onlyChanged": false,
+  "onlyFailures": false,
+  "passWithNoTests": false,
+  "projects": [],
+  "reporters": [
+    [
+      "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/node_modules/jest-junit/index.js",
+      {
+        "outputDirectory": "docs/jest-unittest/jest-junit-reports",
+        "outputName": "jest-junit-reports.xml"
+      }
+    ],
+    [
+      "github-actions",
+      {}
+    ],
+    [
+      "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/node_modules/jest-html-reporter/dist/index.js",
+      {
+        "pageTitle": "Test Report",
+        "outputPath": "docs/jest-unittest/jest-html-reporter/index.html",
+        "includeConsoleLog": true,
+        "includeSuiteFailure": true
+      }
+    ],
+    [
+      "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/node_modules/jest-stare/lib/index.js",
+      {
+        "resultDir": "docs/jest-unittest/jest-stare/",
+        "reportTitle": "jest-stare!",
+        "additionalResultsProcessors": [],
+        "coverageLink": "../../jest-codecoverage/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json",
+        "resultHtml": "index.html",
+        "resultJson": "jest-results.json"
+      }
+    ],
+    [
+      "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/node_modules/jest-html-reporters/index.js",
+      {
+        "publicPath": "docs/jest-unittest/jest-html-reporters/",
+        "pageTitle": "Unit Test Results",
+        "inlineSource": true,
+        "enableMergeData": true
+      }
+    ]
+  ],
+  "rootDir": "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project",
+  "runTestsByPath": false,
+  "skipFilter": false,
+  "testFailureExitCode": 1,
+  "testPathPattern": "",
+  "testSequencer": "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/node_modules/@jest/test-sequencer/build/index.js",
+  "updateSnapshot": "none",
+  "useStderr": false,
+  "verbose": true,
+  "watch": false,
+  "watchAll": false,
+  "watchman": true
+}

@@ -23,7 +23,7 @@ module.exports = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: "docs/jest-codecoverage",
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -31,12 +31,17 @@ module.exports = {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  // coverageProvider: "babel",
+  coverageProvider: "babel",
 
   // A list of reporter names that Jest uses when writing coverage reports
+  // --- Test ---
   coverageReporters: [
-      "clover",
-      "html"
+    // "html",
+    // "clover",
+    // "json",
+    // "html-spa", // better
+    "lcov",  // html
+    // "text", // only cli
   ],
 
   // An object that configures minimum threshold enforcement for coverage results
@@ -106,9 +111,41 @@ module.exports = {
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
 
-//    "reporters": [
-//	"default"
-//    ],
+  "reporters": [
+    //  "default",
+    ["jest-junit", {
+      "outputDirectory": "docs/jest-unittest/jest-junit-reports",
+      "outputName": "jest-junit-reports.xml"
+    }],
+    "github-actions",
+    ["jest-html-reporter", {
+      "pageTitle": "Test Report",
+      "outputPath": "docs/jest-unittest/jest-html-reporter/index.html",
+      "includeConsoleLog": true,
+      "includeSuiteFailure": true
+    }],
+    ["jest-stare", {
+      "resultDir": "docs/jest-unittest/jest-stare",
+      "reportTitle": "jest-stare!",
+      "additionalResultsProcessors": ["jest-junit"],
+      "coverageLink": "../../jest-codecoverage/index.html",
+      "jestStareConfigJson": "jest-stare.json",
+      "jestGlobalConfigJson": "globalStuff.json"
+    }],
+
+    ["jest-html-reporters", {
+      "publicPath": "docs/jest-unittest/jest-html-reporters/",
+      "pageTitle": "Unit Test Results",
+      "inlineSource": true,
+      "enableMergeData": true
+    }],
+    // "jest-allure"
+    // ["jest-simple-dot-reporter", {"color": true}]
+    // "jest-standard-reporter"
+    // "jest-github-reporter",
+    // "jest-dashboard"
+
+  ],
   // Automatically reset mock state before every test
   // resetMocks: false,
 
@@ -137,6 +174,8 @@ module.exports = {
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
+  // For Jest Allure
+  // setupFilesAfterEnv: ["jest-allure/dist/setup"],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -169,10 +208,12 @@ module.exports = {
   // testRegex: [],
 
   // This option allows the use of a custom results processor
-  // testResultsProcessor: undefined,
+  // "testResultsProcessor": "jest-html-reporter",
 
   // This option allows use of a custom test runner
   // testRunner: "jest-circus/runner",
+  // For jest allure
+  // "testRunner": "jest-jasmine2"
 
   // A map from regular expressions to paths to transformers
   // transform: undefined,

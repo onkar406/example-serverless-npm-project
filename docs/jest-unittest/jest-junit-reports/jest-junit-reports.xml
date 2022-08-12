@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="14" failures="0" errors="0" time="0.518">
+  <testsuite name="times()" errors="0" failures="0" skipped="0" timestamp="2022-08-12T22:30:47" time="0.445" tests="14">
+    <testcase classname="times() should equal 10" name="times() should equal 10" time="0.002">
+    </testcase>
+    <testcase classname="times() should equal 6" name="times() should equal 6" time="0.001">
+    </testcase>
+    <testcase classname="times() should equal 25" name="times() should equal 25" time="0">
+    </testcase>
+    <testcase classname="spell() should return &quot;one&quot;" name="spell() should return &quot;one&quot;" time="0">
+    </testcase>
+    <testcase classname="spell() should return &quot;two&quot;" name="spell() should return &quot;two&quot;" time="0">
+    </testcase>
+    <testcase classname="spell() should return &quot;three&quot;" name="spell() should return &quot;three&quot;" time="0">
+    </testcase>
+    <testcase classname="spell() should return &quot;four&quot;" name="spell() should return &quot;four&quot;" time="0">
+    </testcase>
+    <testcase classname="spell() should return &quot;unknown&quot;" name="spell() should return &quot;unknown&quot;" time="0">
+    </testcase>
+    <testcase classname="pow() should return 8" name="pow() should return 8" time="0">
+    </testcase>
+    <testcase classname="combination of multiple functions sigma(3) === factorial(3)" name="combination of multiple functions sigma(3) === factorial(3)" time="0">
+    </testcase>
+    <testcase classname="sigma() sigma(10) should return 55" name="sigma() sigma(10) should return 55" time="0.001">
+    </testcase>
+    <testcase classname="sigma() sigma(0) should return 0" name="sigma() sigma(0) should return 0" time="0">
+    </testcase>
+    <testcase classname="factorial() factorial(12) should return 479001600" name="factorial() factorial(12) should return 479001600" time="0.001">
+    </testcase>
+    <testcase classname="factorial() factorial(0) should return 1" name="factorial() factorial(0) should return 1" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,272 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 14,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 14,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1660343447860,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 14,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1660343448360,
+        "runtime": 445,
+        "slow": false,
+        "start": 1660343447915
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "/home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/test/calc.jest.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "times()"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "times() should equal 10",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should equal 10"
+        },
+        {
+          "ancestorTitles": [
+            "times()"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "times() should equal 6",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should equal 6"
+        },
+        {
+          "ancestorTitles": [
+            "times()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "times() should equal 25",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should equal 25"
+        },
+        {
+          "ancestorTitles": [
+            "spell()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "spell() should return \"one\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"one\""
+        },
+        {
+          "ancestorTitles": [
+            "spell()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "spell() should return \"two\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"two\""
+        },
+        {
+          "ancestorTitles": [
+            "spell()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "spell() should return \"three\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"three\""
+        },
+        {
+          "ancestorTitles": [
+            "spell()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "spell() should return \"four\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"four\""
+        },
+        {
+          "ancestorTitles": [
+            "spell()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "spell() should return \"unknown\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return \"unknown\""
+        },
+        {
+          "ancestorTitles": [
+            "pow()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "pow() should return 8",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return 8"
+        },
+        {
+          "ancestorTitles": [
+            "combination of multiple functions"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "combination of multiple functions sigma(3) === factorial(3)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "sigma(3) === factorial(3)"
+        },
+        {
+          "ancestorTitles": [
+            "sigma()"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sigma() sigma(10) should return 55",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "sigma(10) should return 55"
+        },
+        {
+          "ancestorTitles": [
+            "sigma()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sigma() sigma(0) should return 0",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "sigma(0) should return 0"
+        },
+        {
+          "ancestorTitles": [
+            "factorial()"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "factorial() factorial(12) should return 479001600",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "factorial(12) should return 479001600"
+        },
+        {
+          "ancestorTitles": [
+            "factorial()"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "factorial() factorial(0) should return 1",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "factorial(0) should return 1"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

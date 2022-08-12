@@ -40,3 +40,37 @@ describe('spell()', () => {
     })
 
 })
+
+
+describe('pow()', function () {
+    it('should return 8', function () {
+        expect(calc.pow(2, 3)).toBe(8)
+    })
+})
+
+// Pending test cases:
+describe('combination of multiple functions', function () {
+    it('sigma(3) === factorial(3)', function() {
+        expect(calc.sigma(3)).toBe(calc.factorial(3))
+    })
+})
+
+
+describe('sigma()', function () {
+    it('sigma(10) should return 55', function () {
+        expect(calc.sigma(10)).toBe(55)
+    })
+    it('sigma(0) should return 0', function () {
+        expect(calc.sigma(0)).toBe(0)
+    })
+})
+
+
+describe('factorial()', function () {
+    it('factorial(12) should return 479001600', function () {
+        expect(calc.factorial(12)).toBe(479001600)
+    })
+    it('factorial(0) should return 1', function () {
+        expect(calc.factorial(0)).toBe(1)
+    })
+})

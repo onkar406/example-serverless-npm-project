@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/16</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">90% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/10</span>
+                <span class='fraction'>9/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/16</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -119,7 +119,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,24 +145,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -196,25 +196,25 @@ function spell(input) {
     }
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >pow(</span>num, pow) {
-<span class="cstat-no" title="statement not covered" >    return num ** pow</span>
+function pow(num, pow) {
+    return num ** pow
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >sigma(</span>a) {
-<span class="cstat-no" title="statement not covered" >    if (a == 0) {</span>
-<span class="cstat-no" title="statement not covered" >        return 0</span>
+function sigma(a) {
+    if (a == 0) {
+        return 0
     }
     else {
-<span class="cstat-no" title="statement not covered" >        return times(a, a+1)/2</span>
+        return times(a, a+1)/2
     }
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >factorial(</span>a) {
-<span class="cstat-no" title="statement not covered" >    if (a === 0) {</span>
-<span class="cstat-no" title="statement not covered" >        return 1</span>
+function factorial(a) {
+    if (a === 0) {
+        return 1
     }
     else {
-<span class="cstat-no" title="statement not covered" >        return times(a, factorial(a-1))</span>
+        return times(a, factorial(a-1))
     }
 }
 &nbsp;
@@ -226,7 +226,7 @@ module.exports = { times, spell, pow, sigma, factorial }
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-08-12T12:20:03.355Z
+                at 2022-08-12T22:30:48.447Z
             </div>
         <script src="prettify.js"></script>
         <script>
