@@ -40,7 +40,7 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
-          junit_files: "junit.xml"
+          junit_files: "docs/jest-unittest/jest-junit-reports/jest-junit-reports.xml"
 
       # - name: Conclusion
       #   run: echo "Conclusion is ${{ fromJSON( steps.test-results.outputs.json ).conclusion }}"

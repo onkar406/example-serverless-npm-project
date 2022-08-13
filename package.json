@@ -50,5 +50,8 @@
   "bugs": {
     "url": "https://github.com/onkar406/example-serverless-npm-project/issues"
   },
-  "homepage": "https://github.com/onkar406/example-serverless-npm-project#readme"
+  "homepage": "https://github.com/onkar406/example-serverless-npm-project#readme",
+  "dependencies": {
+    "mathjs": "^11.0.1"
+  }
 }
