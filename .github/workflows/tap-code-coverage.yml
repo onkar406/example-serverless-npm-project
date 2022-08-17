@@ -39,6 +39,7 @@ jobs:
         run: |
           git config --local user.name "Documentation-Bot"
           git add docs/*
+          git status
           git commit -m "Adding Docs"
           git push
 
