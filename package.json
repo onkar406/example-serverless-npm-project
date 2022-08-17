@@ -11,7 +11,8 @@
     "deploy": "serverless deploy",
     "cleanup": "rm -rf docs/tap-codecoverage/* docs/tap-unittest/*",
     "tap-test": "tap test/*.tap.js",
-    "tap-coverage": "npm run tap-test"
+    "tap-coverage": "npm run tap-test",
+    "tap-nyc-test": "nyc tap test/*.tap.js | tap-nyc"
   },
   "keywords": [
     "serverless",
@@ -20,7 +21,6 @@
   "author": "onkar406",
   "license": "UNLICENSED",
   "devDependencies": {
-
     "nyc": "^15.1.0",
     "serverless-offline": "^9.0.0",
     "tap": "^16.3.0"

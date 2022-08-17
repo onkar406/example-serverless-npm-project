@@ -16,7 +16,7 @@ invert: false
 jobs: 8
 jsx: false
 # libtap-settings: null
-lines: 100
+lines: 50
 node-arg: []
 nyc-arg: ["--report-dir=docs/tap-codecoverage"]
 nyc-help: false
@@ -26,14 +26,15 @@ only: false
 # output-file: null
 parser-version: false
 rcfile: /home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/.taprc
-reporter: ["xunit"]
+reporter: []
 
 reporter-arg: []
 # save: null
 save-fixture: false
 show-process-tree: false
 snapshot: false
-statements: 100
+branches: 50
+statements: 50
 test-arg: []
 test-env: []
 test-ignore: $.
