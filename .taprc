@@ -1,0 +1,45 @@
+browser: false
+changed: false
+check-coverage: true
+color: true
+comments: false
+coverage: true
+# coverage-report: [clover, cobertura, html, json, json-summary, lcov, lcovonly, teamcity, text, text-lcov, text-summary]
+coverage-report: [lcov]
+debug: false
+files: []
+flow: false
+functions: 100
+grep: []
+help: false
+invert: false
+jobs: 8
+jsx: false
+# libtap-settings: null
+lines: 100
+node-arg: []
+nyc-arg: ["--report-dir=docs/tap-codecoverage"]
+nyc-help: false
+nyc-version: false
+only: false
+# output-dir: null
+# output-file: null
+parser-version: false
+rcfile: /home/onkar406/Github/Serverless-Projects/example-serverless-npm-project/.taprc
+reporter: ["xunit"]
+
+reporter-arg: []
+# save: null
+save-fixture: false
+show-process-tree: false
+snapshot: false
+statements: 100
+test-arg: []
+test-env: []
+test-ignore: $.
+test-regex: ((\/|^)(test?|__test?__)\/.*|\.(test?|spec)|^\/?test?)\.([mc]js|[jt]sx?)$
+timeout: 30
+ts: false
+version: false
+versions: false
+watch: false
