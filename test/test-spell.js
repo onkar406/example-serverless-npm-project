@@ -21,6 +21,10 @@ describe('spell()', function () {
         assert.equal(calc.spell(4), 'four')
     })
 
+    it('should return "five"', function () {
+        assert.equal(calc.spell(5), 'five')
+    })
+
     it('should return "unknown"', function () {
         assert.equal(calc.spell(6), 'unknown')
     })
