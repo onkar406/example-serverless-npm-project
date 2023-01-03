@@ -1,7 +1,7 @@
 'use strict'
 
 const assert = require('assert')
-const calc = require('../src/calc.js')
+const calc = require('../src/sigma.js')
 
 describe('sigma()', function () {
     it('sigma(10) should return 55', function () {

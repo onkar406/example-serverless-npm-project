@@ -1,7 +1,7 @@
 'use strict'
 
 const assert = require('assert')
-const calc = require('../src/calc.js')
+const calc = require('../src/times.js')
 
 describe('times()', function () {
     it('should equal 10', function () {

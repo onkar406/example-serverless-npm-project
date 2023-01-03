@@ -1,7 +1,7 @@
 'use strict'
 
 const assert = require('assert')
-const calc = require('../src/calc.js')
+const calc = require('../src/factorial.js')
 
 describe('factorial()', function () {
     it('factorial(10) should return 3628800', function () {

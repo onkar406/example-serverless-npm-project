@@ -1,7 +1,7 @@
 'use strict'
 
 const assert = require('assert')
-const calc = require('../src/calc.js')
+const calc = require('../src/spell.js')
 
 describe('spell()', function () {
 
