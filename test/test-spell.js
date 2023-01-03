@@ -5,6 +5,9 @@ const calc = require('../src/calc.js')
 
 describe('spell()', function () {
 
+    it('should return "zero"', function () {
+        assert.equal(calc.spell(0), 'zero')
+    })
     it('should return "one"', function () {
         assert.equal(calc.spell(1), 'one')
     })
