@@ -7,6 +7,9 @@ function times(a, b) {
 
 function spell(input) {
     switch (input) {
+        case 0:
+            return 'zero'
+
         case 1:
             return 'one'
 
