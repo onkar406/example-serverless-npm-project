@@ -5,7 +5,7 @@ const calc = require('../src/calc')
 // times()
 t.test('times()', t => {
     t.equal(calc.times(2, 5), 10)
-    t.equal(calc.times(3, 2), 6)
+    t.equal(calc.times(3, 2), 8)
     t.equal(calc.times(5, 5), 25)
     t.end()
 })
