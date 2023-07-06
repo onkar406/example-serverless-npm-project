@@ -7,7 +7,7 @@ function sigma(a) {
         return 0
     }
     else {
-        return calc.times(a, a+1)/2
+        return calc.times(a, a + 1) / 2
     }
 }
 

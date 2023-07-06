@@ -7,7 +7,7 @@ function factorial(a) {
         return 1
     }
     else {
-        return calc.times(a, factorial(a-1))
+        return calc.times(a, factorial(a - 1))
     }
 }
 

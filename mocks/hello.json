@@ -1,5 +1,5 @@
 {
-    "body" : "{\"name\": \"Unknown\"}",
+    "body": "{\"name\": \"Unknown\"}",
     "httpMethod": "POST",
     "path": "/hello",
     "resource": "/"
